@@ -142,3 +142,30 @@ html {
 #player h3:active {
     scale: 0.9;
 }
+
+
+/* Let's add some media queries */
+
+@media screen and (max-width: 600px) {
+    #main {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
+    #left {
+        width: 100%;
+        height: 50%;
+        border-radius: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    #right {
+        width: 100%;
+        height: 50%;
+        border-radius: 0;
+        margin-bottom: 20px;
+    }
+}
