@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    color: #fff;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 85%;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    padding: 5vw 10vw;
+}
+
+#left {
+    height: 100%;
+    width: 45%;
+    background-color: #5a5a5a;
+    background-image: url(https://www.propergaanda.com/wp-content/uploads/2024/08/Betterimage.ai_1724339849035-1024x1024.jpeg);
+    background-size: cover;
+    background-position: top;
+    border-radius: 10px;
+}
+
+#right {
+    height: 100%;
+    width: 55%;
+    /* background-color: blanchedalmond; */
+    padding: 0vw 3vw;
+}
+
+
+#right h3 {
+    font-size: 40px;
+}
+
+#all-songs {
+    height: 85%;
+    /* background-color: red; */
+    margin-top: 10px;
+    overflow-y: scroll;
+}
+
+#all-songs::-webkit-scrollbar {
+    width: 8px;
+    /* Adjust width as needed */
+}
+
+#all-songs::-webkit-scrollbar-track {
+    background: #2a2a2a;
+    /* Track background color */
+    border-radius: 4px;
+    /* Optional: Rounded corners */
+}
+
+#all-songs::-webkit-scrollbar-thumb {
+    background: #666;
+    /* Thumb (draggable part) color */
+    border-radius: 4px;
+    /* Optional: Rounded corners */
+}
+
+#all-songs::-webkit-scrollbar-thumb:hover {
+    background: #888;
+    /* Thumb color on hover */
+}
+
+.song-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    border-top: 1px solid #5a5a5a;
+}
+
+.song-card:hover {
+    cursor: pointer;
+    background-color: #424242;
+}
+
+.song-card:nth-last-child(1) {
+    border-bottom: 1px solid #5a5a5a;
+}
+
+.song-card .part-1 {
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+.song-card img {
+    height: 55px;
+    width: 55px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.song-card .part-1 h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.song-card h6 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+#player {
+    height: 15%;
+    width: 100%;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#player h3 {
+    background-color: rgb(73, 73, 73);
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#player h3 i {
+    font-size: 22px;
+}
+
+
+#player h3:active {
+    scale: 0.9;
+}
