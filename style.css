@@ -152,20 +152,29 @@ html {
         height: 100%;
         width: 100%;
         padding: 0;
+        position: relative;
     }
 
     #left {
         width: 100%;
         height: 50%;
         border-radius: 0;
-        background-size: contain;
-        background-repeat: no-repeat;
     }
 
     #right {
         width: 100%;
         height: 50%;
         border-radius: 0;
-        margin-bottom: 20px;
+        margin: 20px 0px;
+    }
+
+    #right h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #player {
+        position: sticky;
+        bottom: 0px;
     }
 }
